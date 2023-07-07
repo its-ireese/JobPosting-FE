@@ -19,12 +19,6 @@ const Create = () => {
         },
         {
           name: "Python"
-        },
-        {
-          name: "Django"
-        },
-        {
-          name: "Rust"
         }
       ];
   const navigate = useNavigate();
@@ -32,7 +26,7 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8080/post", {
+    fetch("http://localhost:8181/post", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
